@@ -1,4 +1,3 @@
-﻿
 /*
 Copyright (c) 2010, Yahoo! Inc. All rights reserved.
 Code licensed under the BSD License:
@@ -71,13 +70,20 @@ acronym:after {
 }
 
 /* Body */
+html{background:-webkit-gradient(linear,0 0,0 60,from(#273c4d),to(#40627c),color-stop(90%,#40627c));
+background:-moz-linear-gradient(top,#273c4d,#40627c);
+       
+	
 
-html {
+margin: 0; padding: 0;
 }
-body {background: #FFFFFF;
+
+
+
+body {background:;
 width: 100%;
+margin: 0px 0 0 0px;}
 
-}
 
 /* Major Divisions */
 
@@ -86,7 +92,7 @@ width: 100%;
 div#page {width: 96.45%; /*978/1014 =0.9645*/
 max-width: 1300px;
 margin: 0 auto; 
-background-color: #FFFFFF;
+border-bottom:1px solid black;
 
 
 }
@@ -94,41 +100,42 @@ background-color: #FFFFFF;
     
 /* Header */
 div#header {padding: 0px; 
-width: 96.45%; /*978/1014 =0.9645*/
+width: 100%; /*978/1014 =0.9645*/
 margin:0 auto; 
-padding: 22px 0;
+padding: 0px 0;
 font-size: 14px; 
 margin-bottom: 0px;
-background:#FFFFFF ;
+border-bottom:22px solid black;
 }
 
 div#header h1 {font-size: 14px; 
-margin-bottom: 22px;
+margin-bottom: 0px;
 margin-left: 0px;
 text-align: center;
 font-size: Large;
 font-weight: bold;
-
-
+color: #2B65EC;
 
 }
-div#header h1 a {font-size: 28px; 
-margin-bottom: 22px;
+div#header h1 a {
+font-size: 28px; 
+margin-bottom: 0px;
 font-family: 'Holtwood One SC', serif;
-
+color: #2B65EC;
+text-shadow:2px 2px 2px #000;
 }
 
 
 
-p.tagline {width: 55.35%; /*558/1008=.055357*/
+
+p.tagline {color: white;
 margin-left: 0px;
 margin-bottom: 0px;
-font-size: 14px; 
+font-family: 'Bowlby One SC', sans-serif;
+font-size: 12px; 
 Position: relative; 
+border-bottom: 22px solid black;}
 
-
-
-}
 
 /*Hide Stuff */
 div#header ul.accessibility {display: none;
@@ -136,10 +143,15 @@ div#header ul.accessibility {display: none;
 
 /* Content */
 
-div#content { 
+
+
+
+div#content {background:-moz-linear-gradient(center bottom , #ebebeb, #999999);
 float:left;
 width:69.44%; /*700/1008=.69444*/
-margin: 14px;
+margin: 0px;
+border-radius: 15px;
+-moz-border-radius: 15px;
 }
 
 div#content ul.info {text-align: center;
@@ -154,7 +166,6 @@ text-align:left;
 list-style-type: none;
 margin-left: 22px;
 
-
 }
 div#content ul.education {
 list-style-type: none;
@@ -164,9 +175,9 @@ margin-bottom: 0px;
 }
 
 div#content ul.skills {list-style-type: none;
-width: 978px;
 text-align: center;
 padding: 5px;
+
 
 }
 div#content ul.services {text-align:left; 
@@ -175,65 +186,120 @@ margin-left: 0px;
 margin-bottom: 0px;
 }
 
-div #navigation{ 
+div #navigation{margin-top: -3px; 
 } 
-/*sidebar*/
-div#sidebar {float:right;
-width: 340px;
-height: 100%;
-padding: 5px;
-}  
- 
+
+
 
 ul#expertise{list-style:none;
 margin-left: 0px;
 margin:0px;
-width:300px;
 line-height: 22px; 
 margin-right: 5px;  
-margin-top: 3px;
- 
 
 }
 
 ul#expertise li {display:block;
-padding-bottom: 22px;
+padding-bottom: 24px;
 Font-size: 22px;
-margin-top: 22px; 
+margin-top: 24px; 
+text-align: center;
 }
 
 
 ul#expertise li a {text-decoration:none;
 padding:10px 10px;
-width: 340px;
 background: #2B65EC;
 color:#eee;
 text-align:center;
 border-left:1px solid #fff;
+-moz-border-radius: 15px;
 }
+
+/*sidebar*/
+
+div#sidebar { 
+
+background:-moz-linear-gradient(center bottom, #ebebeb, #999999); 
+height: 100%;
+padding: 5px;
+float: left;  
+width: 180px;  
+margin: 22px;  
+
+-moz-border-radius: 15px;  
+
+}   
+
+
+#sidebar li{ text-decoration: underline;
+text-align: left; 
+    font-size: 14pt;  
+    color: #044055;  
+    font-weight: bold;  
+    padding-bottom:22px;  
+    padding-left: 15px;
+	margin-top: px;
+	margin-left: 10px;
+
+}
+	
 
 ul#sidebar li a:hover,
-ul#sidebar li a:focus {
+ul#sidebar li a:focus {background-color: #FDD017;
 }
-#sidebar h2 { text-align: left; 
-    font-size: 24px;    
-    font-weight: bold;  
-    padding-bottom: 22px;  
-    padding-left: 15px;
-	margin-top: 30px;
-	margin-left: 22px;
-	
-}  
+
+#sidebar h2 {font-size: 14pt;
+text-align: center;
+border-bottom: 0px solid white;
+} 
+
+ul#resources li {text-align: center;
+font-size: 12pt;
+}
+
+div#socialmedia {background-color: #FFFFFF; 
+
+height: 100%;
+padding: 5px;
+float: right;
+    width: 180px;  
+    background: #ccc;  
+    margin: 0px;  
+-moz-border-radius: 15px;  
+}   
 
 
+ul#socialmediabuttons {margin:0px;
+padding: 0px;
+}
+
+
+
+
+/*Twitter*/
+
+div#twitter{background:;  
+margin: 0px;
+margin-left: 10px;
+padding-left: 15px;
+float: left;}
 
 /* Footer */
 div#footer {clear: both;
  padding-top: 10px;  
  padding-bottom:5px;  
- margin-top: 10px; 
+ margin-top: 10px;  
+ color: #fff;
+ background: black;
  margin: 0 ;
  width: 100%;
+ border: 8px solid #000;
+-moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+-moz-border-top-colors:    #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+-moz-border-left-colors:   #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+-moz-border-right-colors:  #555 #666 #777 #888 #999 #aaa #bbb #ccc;
+padding: 5px 5px 5px 15px;
  
 
 }
@@ -253,21 +319,25 @@ ul#navigation {list-style:none;
 margin-left: 0px;
 margin:0px;
 padding:0;
-width:81%; /*81/1008=8.1*/
-line-height: 14px; overflow: hidden
+width:100%; /*81/1008=8.1*/
+line-height: 14px; overflow: hidden;
+border: 1px solid black;
+Background: black;
 }
 
-ul#navigation li {display:inline
+ul#navivation li {display:inline
 }
 
 
-ul#navigation li a {text-decoration:none;
+#navigation li a {text-decoration:none;
 padding:5px 0;
 width:100px;
+background: #2B65EC;
+color:#eee;
 float:left;
 text-align:center;
 border-left:1px solid #fff;
-
+-moz-border-radius: 15px;
 
 }
 
@@ -278,13 +348,13 @@ ul#navigation li a:hover,
 ul#navigation li a:focus {background-color: #FDD017;
 }
 
-
 /*Content Typography: Headings*/
 
 div#content h2 {font-size: 14pt;
 margin-top: 12px;
 text-align:center;
-font-size: 24px;   
+font-size: 24px;  
+color: #044055; 
 font-weight: bold;
 padding: 14px;
 }
@@ -296,7 +366,12 @@ text-align: left;
 font-size: Large;
 font-weight: bold;
 }
-
+div#content h4 {
+}
+div#content h5 {
+}
+div#content h6 {
+}
 
 /*Content Typography: Paragraphs*/
 div#content p {
@@ -304,16 +379,20 @@ margin-bottom: 22px;
 	margin-top: 0px;
 	margin-left:14px;
 	font-size: 14px; line-height: 22px;
-	width: 700px; /*width: 810/13= 80.3em; /* for non-IE */
- /*width: 810/13 x .9759=60.80em;/*for IE */
+	
+/*width: 810/13 x .9759=60.80em;/*for IE */
+
+
 
 }
+
+
 
  div#content p.article {margin-bottom: 22px;
 	margin-top: 0px;
 	margin-left:14px;
 	font-size: 14px; line-height: 22px;
-	width: 810px;
+	
 	
 	}
 
@@ -323,6 +402,8 @@ div#content ul.contracts {text-align: left;
 width:63.69%; /* 642/ 1008 = 0.6369 */
 margin-left:auto;
 margin-right:auto;	 
+border:1px solid #2B65EC;
+background:#FFFFFF;
 margin-bottom: 22px;
 margin-top: 22px;
 padding:10px 10px;
@@ -337,6 +418,7 @@ div#content * li ul { list-style-type: none;
 
 }
 div#content * li ul li {list-style-type: none;
+
 }
 
 
@@ -354,7 +436,8 @@ div#content * li ol li {
 /*Content Typography: Links*/
 div#content a {display:inline;
 padding:0px 0;
-width:0px;
+width:0px; 
+color:#eee;
 text-align:center;
 margin-bottom: 0px;
 
@@ -363,7 +446,7 @@ margin-bottom: 0px;
 div#content a:visited {
 }
 div#content a:hover,
-div#content a:focus {
+div#content a:focus {color: #FDD017;
 }
 
 
@@ -375,17 +458,77 @@ margin-left: 0px;
 
 div#content img {max-width: 55%;
 display: block;
-float: right;
-margin:22px 333px 66px 66px;  
+float: left;
+margin:22px 110px 138px 138px;  
  
 }	
 div#header img {max-width: 30%;
 display: block;
+background-color: #2B65EC;
 margin: 22px 22px 22px 22px;
 
 }
-
+div#sidebar img {max-width: 100%;
+display: block;
+background-color: #ccc;
+}
  
 
 
 
+/*media quieries*/
+
+@media screen and (min-width: 200px) {
+div#navigation{
+border: 5px solid black;
+position: fixed;
+top: 75px;
+left: 10px;
+height: auto;}
+ 
+ }
+ 
+ 
+ 
+ 
+ @media screen and (min-width: 760px) {
+div#navigation{
+border: 5px solid black;
+position: fixed;
+top: 75px;
+left: 10px;
+height: auto;}
+ 
+
+ @media screen and (min-width: 978px) {
+div#navigation{
+border: 5px solid black;
+position: fixed;
+top: 75px;
+left: 10px;
+height: auto;}
+ 
+ }
+ @media screen and (min-width: 1010px) {
+div#navigation{
+border: 5px solid black;
+position: fixed;
+top: 75px;
+left: 10px;
+height: auto;}
+ 
+ }
+ 
+ @media screen and (min-width: 1250px) {
+div#navigation{
+border: 5px solid black;
+position: fixed;
+top: 75px;
+left: 10px;
+height: auto;}
+ 
+ }
+@media screen and (max-device-width: 400px) {
+div {border:none;}
+ 
+ } 
