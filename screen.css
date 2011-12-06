@@ -28,12 +28,13 @@ abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 /* Body */
 
-html {
+html{margin: 0; padding: 0;
 }
-body {background: #FFFFFF;
-width: 100%;
 
-}
+body {background:;
+width: 100%;
+margin: -10px 0 0 -10px;}
+
 
 /* Major Divisions */
 
@@ -42,7 +43,8 @@ width: 100%;
 div#page {width: 96.45%; /*978/1014 =0.9645*/
 max-width: 1300px;
 margin: 0 auto; 
-background-color: #FFFFFF;
+background-color:;
+border-bottom:1px solid black;
 
 
 }
@@ -52,28 +54,30 @@ background-color: #FFFFFF;
 div#header {padding: 0px; 
 width: 96.45%; /*978/1014 =0.9645*/
 margin:0 auto; 
-padding: 22px 0;
+padding: 0px 0;
 font-size: 14px; 
 margin-bottom: 0px;
-background:#FFFFFF ;
+background:;
+border-bottom:;
 }
 
 div#header h1 {font-size: 14px; 
-margin-bottom: 22px;
+margin-bottom: 0px;
 margin-left: 0px;
 text-align: center;
 font-size: Large;
 font-weight: bold;
 color: #2B65EC;
 
-
 }
 div#header h1 a {
 font-size: 28px; 
-margin-bottom: 22px;
+margin-bottom: 0px;
 font-family: 'Holtwood One SC', serif;
 color: #2B65EC;
+text-shadow:2px 2px 2px #000;
 }
+
 
 
 
@@ -81,9 +85,10 @@ p.tagline {
 margin-left: 0px;
 margin-bottom: 0px;
 font-family: 'Bowlby One SC', sans-serif;
-font-size: 14px; 
+font-size: 12px; 
 Position: relative; 
 }
+
 
 /*Hide Stuff */
 div#header ul.accessibility {display: none;
@@ -91,10 +96,23 @@ div#header ul.accessibility {display: none;
 
 /* Content */
 
-div#content {background: #ccc;  
+.borderradius #content {
+	border: 1px solid #141414;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+}
+.boxshadow #content {
+	border: none;
+	-webkit-box-shadow: rgba(0,0,0, .5) 3px 3px 6px;
+	-moz-box-shadow: rgba(0,0,0, .5) 3px 3px 6px;
+	box-shadow: rgba(0,0,0, .5) 3px 3px 6px;
+}
+
+div#content {background:;  
 float:left;
 width:69.44%; /*700/1008=.69444*/
-margin: 14px;
+margin: 0px;
 border-radius: 15px;
 -moz-border-radius: 15px;
 
@@ -132,7 +150,7 @@ margin-left: 0px;
 margin-bottom: 0px;
 }
 
-div #navigation{ 
+div #navigation{margin-top: -3px; 
 } 
 
 
@@ -164,38 +182,69 @@ border-left:1px solid #fff;
 
 /*sidebar*/
 
-div#sidebar {background-color: #FFFFFF; 
+div#sidebar {background-color:; 
 
 height: 100%;
+width:;
 padding: 5px;
 float: left;  
     width: 180px;  
-    background: #ccc;  
-    margin: 10px;  
+    background:;  
+    margin: 2px;  
 -moz-border-radius: 15px;  
-}   
 
-ul#sidebar li a:hover,
-ul#sidebar li a:focus {background-color: #FDD017;
-}
+
+}   
 
 
 #sidebar li{ text-align: left; 
     font-size: 14pt;  
     color: #044055;  
     font-weight: bold;  
-    padding-bottom: 22px;  
+    padding-bottom:22px;  
     padding-left: 15px;
-	margin-top: 30px;
-	margin-left: 22px;
+	margin-top: px;
+	margin-left: ;
 	
 } 
 
+ul#sidebar li a:hover,
+ul#sidebar li a:focus {background-color: #FDD017;
+}
 #sidebar h2 {font-size: 14pt;
 text-align: center;
+border-bottom: -1px solid white;
 } 
 
+ul#resources li {text-align: center;
+font-size: 12pt;
+}
 
+div#socialmedia {background-color: #FFFFFF; 
+
+height: 100%;
+padding: 5px;
+float: right;
+    width: 180px;  
+    background: #ccc;  
+    margin: 0px;  
+-moz-border-radius: 15px;  
+}   
+
+
+ul#socialmediabuttons {margin:0px;
+padding: 0px;
+border: 1px solid white;
+}
+
+
+
+
+/*Twitter*/
+
+div#twitter{background:;  
+margin: 22px;
+}
 
 /* Footer */
 div#footer {clear: both;
@@ -232,7 +281,8 @@ margin-left: 0px;
 margin:0px;
 padding:0;
 width:81%; /*81/1008=8.1*/
-line-height: 14px; overflow: hidden
+line-height: 14px; overflow: hidden;
+border: 1px solid black;
 
 }
 
@@ -379,51 +429,27 @@ background-color: #2B65EC;
 margin: 22px 22px 22px 22px;
 
 }
-div#socialmedia img {max-width: 30%;
+div#sidebar img {max-width: 100%;
 display: block;
+background-color: #ccc;
 }
  
 
 
 
 /*media quieries*/
-@media screen and (min-width: 200px) {
-p.tagline {
- width: 
- float: left;
- font-size: 12px;
- }
- }
- 
- @media screen and (min-width: 760px) {
-p.company {width: 306px;
-float: none;
-div#header{
- width: 138px;
- float: none;
- font-size: 12px;
- }
-}
- 
- @media screen and (min-width: 200px) {
- 
- 
 
- }
- @media screen and (min-width: 800px) and (max-width: 1200px) { 
-.contracts {
-width: 30%;
-float: right;
-}
 @media screen and (min-width: 200px) {
 div#navigation{
-border: 5px solid white;
+border: 5px solid black;
 position: fixed;
 top: 75px;
 left: 10px;
 height: auto;}
  
  }
+ 
+ 
  
 @media screen and (max-device-width: 400px) {
 div {border:none;}
