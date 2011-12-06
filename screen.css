@@ -28,7 +28,16 @@ abbr,acronym { border-bottom: 1px dotted; cursor: help; }
 
 /* Body */
 
-html{margin: 0; padding: 0;
+html{background:-webkit-gradient(linear,0 0,0 60,from(#273c4d),to(#40627c),color-stop(90%,#40627c));
+background:-moz-linear-gradient(top,#273c4d,#40627c);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+	
+}
+
+margin: 0; padding: 0;
 }
 
 body {background:;
@@ -52,13 +61,13 @@ border-bottom:1px solid black;
     
 /* Header */
 div#header {padding: 0px; 
-width: 96.45%; /*978/1014 =0.9645*/
+width: 100%; /*978/1014 =0.9645*/
 margin:0 auto; 
 padding: 0px 0;
 font-size: 14px; 
 margin-bottom: 0px;
 background:;
-border-bottom:;
+border-bottom:22px solid black;
 }
 
 div#header h1 {font-size: 14px; 
@@ -81,13 +90,13 @@ text-shadow:2px 2px 2px #000;
 
 
 
-p.tagline {
+p.tagline {color: white;
 margin-left: 0px;
 margin-bottom: 0px;
 font-family: 'Bowlby One SC', sans-serif;
 font-size: 12px; 
 Position: relative; 
-}
+border-bottom: 22px solid black;}
 
 
 /*Hide Stuff */
@@ -109,7 +118,7 @@ div#header ul.accessibility {display: none;
 	box-shadow: rgba(0,0,0, .5) 3px 3px 6px;
 }
 
-div#content {background:;  
+div#content {background:-moz-linear-gradient(center bottom , #ebebeb, #999999);
 float:left;
 width:69.44%; /*700/1008=.69444*/
 margin: 0px;
@@ -160,13 +169,13 @@ margin-left: 0px;
 margin:0px;
 line-height: 22px; 
 margin-right: 5px;  
-margin-top: 3px;
+margin-top: px;
 }
 
 ul#expertise li {display:block;
-padding-bottom: 22px;
+padding-bottom: 24px;
 Font-size: 22px;
-margin-top: 22px; 
+margin-top: 24px; 
 text-align: center;
 }
 
@@ -182,32 +191,34 @@ border-left:1px solid #fff;
 
 /*sidebar*/
 
-div#sidebar {background-color:; 
+div#sidebar { 
+
+background:-moz-linear-gradient(center bottom, #ebebeb, #999999); 
 
 height: 100%;
-width:;
 padding: 5px;
 float: left;  
     width: 180px;  
     background:;  
-    margin: 2px;  
--moz-border-radius: 15px;  
+    margin: 22px;  
 
+-moz-border-radius: 15px;  
 
 }   
 
 
-#sidebar li{ text-align: left; 
+#sidebar li{  text-align: left; 
     font-size: 14pt;  
     color: #044055;  
     font-weight: bold;  
     padding-bottom:22px;  
     padding-left: 15px;
 	margin-top: px;
-	margin-left: ;
+	margin-left: 10px;
+
+}
 	
 } 
-
 ul#sidebar li a:hover,
 ul#sidebar li a:focus {background-color: #FDD017;
 }
@@ -234,7 +245,6 @@ float: right;
 
 ul#socialmediabuttons {margin:0px;
 padding: 0px;
-border: 1px solid white;
 }
 
 
@@ -243,8 +253,10 @@ border: 1px solid white;
 /*Twitter*/
 
 div#twitter{background:;  
-margin: 22px;
-}
+margin: 0px;
+margin-left: 10px;
+padding-left: 15px;
+float: left;}
 
 /* Footer */
 div#footer {clear: both;
@@ -280,10 +292,10 @@ ul#navigation {list-style:none;
 margin-left: 0px;
 margin:0px;
 padding:0;
-width:81%; /*81/1008=8.1*/
+width:100%; /*81/1008=8.1*/
 line-height: 14px; overflow: hidden;
 border: 1px solid black;
-
+Background: black;
 }
 
 ul#navigation li {display:inline
@@ -449,8 +461,44 @@ height: auto;}
  
  }
  
+ @media screen and (min-width: 760px) {
+div#navigation{
+border: 5px solid black;
+position: fixed;
+top: 75px;
+left: 10px;
+height: auto;}
  
+ }
  
+ @media screen and (min-width: 978px) {
+div#navigation{
+border: 5px solid black;
+position: fixed;
+top: 75px;
+left: 10px;
+height: auto;}
+ 
+ }
+ @media screen and (min-width: 1010px) {
+div#navigation{
+border: 5px solid black;
+position: fixed;
+top: 75px;
+left: 10px;
+height: auto;}
+ 
+ }
+ 
+ @media screen and (min-width: 1250px) {
+div#navigation{
+border: 5px solid black;
+position: fixed;
+top: 75px;
+left: 10px;
+height: auto;}
+ 
+ }
 @media screen and (max-device-width: 400px) {
 div {border:none;}
  
